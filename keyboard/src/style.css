@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.textarea {
+    margin: 0 auto;
+    width: 600px;
+    height: 250px;
+    background-color: #c2ffff;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #c2ffff;
+    border: 1px solid #333333;
+    margin: 0 auto;
+    row-gap: 10px;
+    padding: 5px;
+}
+
+.key {
+    height: 70px;
+    width: 70px;
+    border: 1px solid #333333;
+    background-color: #d2fcec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px #A8A8A8;
+    transform: scale(1);
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+    border-radius: 5px
+}
+
+.key.active {
+    transform: scale(0.9);
+    background-color: #b1fade;
+}
+
+.capsLk.active {
+    background-color: #c2ffc2;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.backspace {
+    flex-basis: 160px;
+    text-transform: capitalize;
+}
+
+.tab {
+    flex-basis: 100px;
+    text-transform: capitalize;
+}
+
+.alt, .ctrl, .del, .win {
+    text-transform: capitalize;
+}
+
+.capsLk {
+    flex-basis: 160px;
+    text-transform: capitalize;
+}
+
+.enter {
+    flex-basis: 160px;
+    text-transform: capitalize;
+}
+
+.shift {
+    flex-basis: 160px;
+    text-transform: capitalize;
+}
+
+.space {
+    flex-basis: 620px;
+}
