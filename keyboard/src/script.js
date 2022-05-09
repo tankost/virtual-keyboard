@@ -1,5 +1,5 @@
 const body = document.querySelector('body');
-const keysLink = '/key.json';
+const keysLink = 'keys.json';
 
 const requestKeys = (keys, onComplete, onError) => {
   fetch(keys)
