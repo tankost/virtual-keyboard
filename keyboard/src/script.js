@@ -118,7 +118,7 @@ const selectText = (textarea) => {
 };
 
 let textareaValue = '';
-const highlightKey = (key) => {
+const pushVirtualKey = (key) => {
   const textarea = document.querySelector('.textarea');
   if (!key.classList.contains('capsLk')) {
     key.classList.add('active');
@@ -154,7 +154,7 @@ const pushKeys = (keys) => {
     key.addEventListener('click', () => {
       checkActiveKey(keys);
       capsPush(keys, key);
-      highlightKey(key);
+      pushVirtualKey(key);
     });
   });
 };
