@@ -84,10 +84,86 @@ const createEnKeys = (keys) => {
   }
 };
 
+const checkActiveKey = (keys) => {
+  keys.forEach((key) => {
+    if (key.classList.contains('active') && !key.classList.contains('capsLk')) {
+      key.classList.remove('active');
+    }
+  });
+};
+
+const capsPush = (keys, key) => {
+  if (key.classList.contains('capsLk') && !key.classList.contains('active')) {
+    key.classList.add('active');
+    keys.forEach((letter) => {
+      if (letter.classList.contains('letter')) {
+        // eslint-disable-next-line no-param-reassign
+        letter.innerHTML = letter.innerHTML.toUpperCase();
+      }
+    });
+  } else if (key.classList.contains('capsLk') && key.classList.contains('active')) {
+    key.classList.remove('active');
+    keys.forEach((letter) => {
+      if (letter.classList.contains('letter')) {
+        // eslint-disable-next-line no-param-reassign
+        letter.innerHTML = letter.innerHTML.toLowerCase();
+      }
+    });
+  }
+};
+
+const selectText = (textarea) => {
+  textarea.focus();
+  textarea.setSelectionRange(textarea.selectionStart, textarea.selectionEnd);
+};
+
+let textareaValue = '';
+const highlightKey = (key) => {
+  const textarea = document.querySelector('.textarea');
+  if (!key.classList.contains('capsLk')) {
+    key.classList.add('active');
+  }
+  if (key.classList.contains('tab')) {
+    textareaValue += '\t';
+  } else if (key.classList.contains('backspace')) {
+    textareaValue = textareaValue.replace(textareaValue.charAt(textarea.selectionStart - 1), '');
+    selectText(textarea);
+  } else if (key.classList.contains('del')) {
+    textareaValue += '';
+    textareaValue = textareaValue.replace(textareaValue.charAt(textarea.selectionEnd), '');
+    selectText(textarea);
+  } else if (key.classList.contains('enter')) {
+    textareaValue += '\n';
+  } else if (key.classList.contains('shift')) {
+    textareaValue += '';
+  } else if (key.classList.contains('ctrl') || key.classList.contains('alt') || key.classList.contains('win')) {
+    textareaValue += '';
+  } else if (key.classList.contains('capsLk')) {
+    textareaValue += '';
+  } else {
+    textareaValue += key.innerHTML;
+    textarea.focus();
+  }
+  textarea.value = textareaValue;
+};
+
+const pushKeys = (keys) => {
+  // eslint-disable-next-line no-param-reassign
+  keys = document.querySelectorAll('.key');
+  keys.forEach((key) => {
+    key.addEventListener('click', () => {
+      checkActiveKey(keys);
+      capsPush(keys, key);
+      highlightKey(key);
+    });
+  });
+};
+
 const addKeys = (keys) => {
   createTextarea();
   createKeyboard();
   createEnKeys(keys);
+  pushKeys(keys);
 };
 
 const handleError = (error) => {
