@@ -1,0 +1,322 @@
+[
+  {
+    "name": "letter",
+    "keyEn": "`",
+    "keyRu": "ё"
+  },
+  {
+    "name": "one",
+    "keyEn": "1",
+    "keyRu": "1"
+  },
+  {
+    "name": "two",
+    "keyEn": "2",
+    "keyRu": "2"
+  },
+  {
+    "name": "three",
+    "keyEn": "3",
+    "keyRu": "3"
+  },
+  {
+    "name": "four",
+    "keyEn": "4",
+    "keyRu": "4"
+  },
+  {
+    "name": "five",
+    "keyEn": "5",
+    "keyRu": "5"
+  },
+  {
+    "name": "six",
+    "keyEn": "6",
+    "keyRu": "6"
+  },
+  {
+    "name": "seven",
+    "keyEn": "7",
+    "keyRu": "7"
+  },
+  {
+    "name": "eight",
+    "keyEn": "8",
+    "keyRu": "8"
+  },
+  {
+    "name": "nine",
+    "keyEn": "9",
+    "keyRu": "9"
+  },
+  {
+    "name": "zero",
+    "keyEn": "0",
+    "keyRu": "0"
+  },
+  {
+    "name": "minus",
+    "keyEn": "-",
+    "keyRu": "-"
+  },
+  {
+    "name": "equal",
+    "keyEn": "=",
+    "keyRu": "="
+  },
+  {
+    "name": "backspace",
+    "keyEn": "backspace",
+    "keyRu": "backspace"
+  },
+  {
+    "name": "tab",
+    "keyEn": "tab",
+    "keyRu": "tab"
+  },
+  {
+    "name": "letter",
+    "keyEn": "q",
+    "keyRu": "й"
+  },
+  {
+    "name": "letter",
+    "keyEn": "w",
+    "keyRu": "ц"
+  },
+  {
+    "name": "letter",
+    "keyEn": "e",
+    "keyRu": "у"
+  },
+  {
+    "name": "letter",
+    "keyEn": "r",
+    "keyRu": "к"
+  },
+  {
+    "name": "letter",
+    "keyEn": "t",
+    "keyRu": "е"
+  },
+  {
+    "name": "letter",
+    "keyEn": "y",
+    "keyRu": "н"
+  },
+  {
+    "name": "letter",
+    "keyEn": "u",
+    "keyRu": "г"
+  },
+  {
+    "name": "letter",
+    "keyEn": "i",
+    "keyRu": "ш"
+  },
+  {
+    "name": "letter",
+    "keyEn": "o",
+    "keyRu": "щ"
+  },
+  {
+    "name": "letter",
+    "keyEn": "p",
+    "keyRu": "з"
+  },
+  {
+    "name": "letter",
+    "keyEn": "&lsqb;",
+    "keyRu": "х"
+  },
+  {
+    "name": "letter",
+    "keyEn": "&rbrack;",
+    "keyRu": "ъ"
+  },
+  {
+    "name": "reverse-slash",
+    "keyEn": "&bsol;",
+    "keyRu": "&bsol;"
+  },
+  {
+    "name": "del",
+    "keyEn": "del",
+    "keyRu": "del"
+  },
+  {
+    "name": "capsLk",
+    "keyEn": "capsLk",
+    "keyRu": "capsLk"
+  },
+  {
+    "name": "letter",
+    "keyEn": "a",
+    "keyRu": "ф"
+  },
+  {
+    "name": "letter",
+    "keyEn": "s",
+    "keyRu": "ы"
+  },
+  {
+    "name": "letter",
+    "keyEn": "d",
+    "keyRu": "в"
+  },
+  {
+    "name": "letter",
+    "keyEn": "f",
+    "keyRu": "а"
+  },
+  {
+    "name": "letter",
+    "keyEn": "g",
+    "keyRu": "п"
+  },
+  {
+    "name": "letter",
+    "keyEn": "h",
+    "keyRu": "р"
+  },
+  {
+    "name": "letter",
+    "keyEn": "j",
+    "keyRu": "о"
+  },
+  {
+    "name": "letter",
+    "keyEn": "k",
+    "keyRu": "л"
+  },
+  {
+    "name": "letter",
+    "keyEn": "l",
+    "keyRu": "д"
+  },
+  {
+    "name": "letter",
+    "keyEn": "&semi;",
+    "keyRu": "ж"
+  },
+  {
+    "name": "letter",
+    "keyEn": "'",
+    "keyRu": "э"
+  },
+  {
+    "name": "enter",
+    "keyEn": "enter",
+    "keyRu": "enter"
+  },
+  {
+    "name": "shift",
+    "keyEn": "shift",
+    "keyRu": "shift"
+  },
+  {
+    "name": "letter",
+    "keyEn": "z",
+    "keyRu": "я"
+  },
+  {
+    "name": "letter",
+    "keyEn": "x",
+    "keyRu": "ч"
+  },
+  {
+    "name": "letter",
+    "keyEn": "c",
+    "keyRu": "с"
+  },
+  {
+    "name": "letter",
+    "keyEn": "v",
+    "keyRu": "м"
+  },
+  {
+    "name": "letter",
+    "keyEn": "b",
+    "keyRu": "и"
+  },
+  {
+    "name": "letter",
+    "keyEn": "n",
+    "keyRu": "т"
+  },
+  {
+    "name": "letter",
+    "keyEn": "m",
+    "keyRu": "ь"
+  },
+  {
+    "name": "letter",
+    "keyEn": ",",
+    "keyRu": "б"
+  },
+  {
+    "name": "letter",
+    "keyEn": ".",
+    "keyRu": "ю"
+  },
+  {
+    "name": "slash-point",
+    "keyEn": "/",
+    "keyRu": "."
+  },
+  {
+    "name": "arrow",
+    "keyEn": "↑",
+    "keyRu": "↑"
+  },
+  {
+    "name": "shift",
+    "keyEn": "shift",
+    "keyRu": "shift"
+  },
+  {
+    "name": "ctrl",
+    "keyEn": "ctrl",
+    "keyRu": "ctrl"
+  },
+  {
+    "name": "win",
+    "keyEn": "win",
+    "keyRu": "win"
+  },
+  {
+    "name": "alt",
+    "keyEn": "alt",
+    "keyRu": "alt"
+  },
+  {
+    "name": "space",
+    "keyEn": " ",
+    "keyRu": " "
+  },
+  {
+    "name": "alt",
+    "keyEn": "alt",
+    "keyRu": "alt"
+  },
+  {
+    "name": "arrow-left",
+    "keyEn": "←",
+    "keyRu": "←"
+  },
+  {
+    "name": "arrow-bottom",
+    "keyEn": "↓",
+    "keyRu": "↓"
+  },
+  {
+    "name": "arrow-right",
+    "keyEn": "→",
+    "keyRu": "→"
+  },
+  {
+    "name": "ctrl",
+    "keyEn": "ctrl",
+    "keyRu": "ctrl"
+  }
+]
