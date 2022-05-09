@@ -66,13 +66,13 @@
   },
   {
     "name": "backspace",
-    "keyEn": "backspace",
-    "keyRu": "backspace"
+    "keyEn": "Backspace",
+    "keyRu": "Backspace"
   },
   {
     "name": "tab",
-    "keyEn": "tab",
-    "keyRu": "tab"
+    "keyEn": "Tab",
+    "keyRu": "Tab"
   },
   {
     "name": "letter",
@@ -141,13 +141,13 @@
   },
   {
     "name": "del",
-    "keyEn": "del",
-    "keyRu": "del"
+    "keyEn": "Delete",
+    "keyRu": "Delete"
   },
   {
     "name": "capsLk",
-    "keyEn": "capsLk",
-    "keyRu": "capsLk"
+    "keyEn": "CapsLock",
+    "keyRu": "CapsLock"
   },
   {
     "name": "letter",
@@ -206,13 +206,13 @@
   },
   {
     "name": "enter",
-    "keyEn": "enter",
-    "keyRu": "enter"
+    "keyEn": "Enter",
+    "keyRu": "Enter"
   },
   {
     "name": "shift",
-    "keyEn": "shift",
-    "keyRu": "shift"
+    "keyEn": "Shift",
+    "keyRu": "Shift"
   },
   {
     "name": "letter",
@@ -265,29 +265,29 @@
     "keyRu": "."
   },
   {
-    "name": "arrow",
-    "keyEn": "↑",
-    "keyRu": "↑"
+    "name": "arrow-up",
+    "keyEn": "ArrowUp",
+    "keyRu": "ArrowUp"
   },
   {
     "name": "shift",
-    "keyEn": "shift",
-    "keyRu": "shift"
+    "keyEn": "Shift",
+    "keyRu": "Shift"
   },
   {
     "name": "ctrl",
-    "keyEn": "ctrl",
-    "keyRu": "ctrl"
+    "keyEn": "Control",
+    "keyRu": "Control"
   },
   {
     "name": "win",
-    "keyEn": "win",
-    "keyRu": "win"
+    "keyEn": "Meta",
+    "keyRu": "Meta"
   },
   {
     "name": "alt",
-    "keyEn": "alt",
-    "keyRu": "alt"
+    "keyEn": "Alt",
+    "keyRu": "Alt"
   },
   {
     "name": "space",
@@ -296,27 +296,27 @@
   },
   {
     "name": "alt",
-    "keyEn": "alt",
-    "keyRu": "alt"
+    "keyEn": "Alt",
+    "keyRu": "Alt"
   },
   {
     "name": "arrow-left",
-    "keyEn": "←",
-    "keyRu": "←"
+    "keyEn": "ArrowLeft",
+    "keyRu": "ArrowLeft"
   },
   {
     "name": "arrow-bottom",
-    "keyEn": "↓",
-    "keyRu": "↓"
+    "keyEn": "ArrowDown",
+    "keyRu": "ArrowDown"
   },
   {
     "name": "arrow-right",
-    "keyEn": "→",
-    "keyRu": "→"
+    "keyEn": "ArrowRight",
+    "keyRu": "ArrowRight"
   },
   {
     "name": "ctrl",
-    "keyEn": "ctrl",
-    "keyRu": "ctrl"
+    "keyEn": "Control",
+    "keyRu": "Control"
   }
 ]

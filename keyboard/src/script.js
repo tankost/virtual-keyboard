@@ -71,15 +71,28 @@ const createEnKeys = (keys) => {
     const key = document.createElement('button');
     key.classList.add('key');
     key.classList.add(`${keys[i].name}`);
-    key.innerHTML = `${keys[i].keyEn}`;
+    if (keys[i].name === 'arrow-up') {
+      key.innerHTML = '↑';
+    } else {
+      key.innerHTML = `${keys[i].keyEn}`;
+    }
     row4.append(key);
   }
-
   for (let i = 55; i < keys.length; i += 1) {
     const key = document.createElement('button');
     key.classList.add('key');
     key.classList.add(`${keys[i].name}`);
-    key.innerHTML = `${keys[i].keyEn}`;
+    if (keys[i].name === 'ctrl' || keys[i].name === 'win') {
+      key.innerHTML = `${keys[i].name}`;
+    } else if (keys[i].name === 'arrow-left') {
+      key.innerHTML = '←';
+    } else if (keys[i].name === 'arrow-bottom') {
+      key.innerHTML = '↓';
+    } else if (keys[i].name === 'arrow-right') {
+      key.innerHTML = '→';
+    } else {
+      key.innerHTML = `${keys[i].keyEn}`;
+    }
     row5.append(key);
   }
 };
@@ -118,7 +131,7 @@ const selectText = (textarea) => {
 };
 
 let textareaValue = '';
-const pushVirtualKey = (key) => {
+const highlightKey = (key) => {
   const textarea = document.querySelector('.textarea');
   if (!key.classList.contains('capsLk')) {
     key.classList.add('active');
@@ -140,6 +153,7 @@ const pushVirtualKey = (key) => {
     textareaValue += '';
   } else if (key.classList.contains('capsLk')) {
     textareaValue += '';
+    selectText(textarea);
   } else {
     textareaValue += key.innerHTML;
     textarea.focus();
@@ -147,14 +161,30 @@ const pushVirtualKey = (key) => {
   textarea.value = textareaValue;
 };
 
-const pushKeys = (keys) => {
+const pushVirtualKeys = (keys) => {
   // eslint-disable-next-line no-param-reassign
   keys = document.querySelectorAll('.key');
   keys.forEach((key) => {
     key.addEventListener('click', () => {
       checkActiveKey(keys);
       capsPush(keys, key);
-      pushVirtualKey(key);
+      highlightKey(key);
+    });
+  });
+};
+
+const pushRealKeys = (keys) => {
+  const keysButtons = document.querySelectorAll('.key');
+  window.addEventListener('keydown', (e) => {
+    keys.forEach((key) => {
+      keysButtons.forEach((keyButton) => {
+        if (e.key.toLowerCase() === key.keyEn.toLowerCase() && e.key === keyButton.innerHTML) {
+          checkActiveKey(keysButtons);
+          capsPush(keysButtons, keyButton);
+          highlightKey(keyButton);
+          e.preventDefault();
+        }
+      });
     });
   });
 };
@@ -163,7 +193,8 @@ const addKeys = (keys) => {
   createTextarea();
   createKeyboard();
   createEnKeys(keys);
-  pushKeys(keys);
+  pushVirtualKeys(keys);
+  pushRealKeys(keys);
 };
 
 const handleError = (error) => {
